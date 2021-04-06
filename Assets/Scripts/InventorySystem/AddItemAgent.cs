@@ -27,16 +27,6 @@ namespace Peixi
             bool hasItem = false;
 
             var itemData = core.items.Find(x => x.Name == itemName);
-            //core.items
-            //    .ForEach(x =>
-            //    {
-            //        if (x.Name == itemName)
-            //        {
-            //            hasItem = true;
-            //            return;
-            //        }
-            //    });
-
             if (itemData.Amount > 0)
             {
                 core.ModifiyItem(itemName, amount);

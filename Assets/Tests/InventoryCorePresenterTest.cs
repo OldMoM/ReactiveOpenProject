@@ -22,6 +22,7 @@ namespace Tests
         [Test]
         public void AddTwoItem_fiberAndfiber()
         {
+            //Arrange
             var core = CreateInventoryCorePresenter();
 
             core.AddNewItem("fiber", 3);
@@ -69,6 +70,8 @@ namespace Tests
                 });
 
             core.AddNewItem("fiber");
+
+            
         }
         [Test]
         public void GetAmount_NoItem_0()
